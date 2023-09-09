@@ -49,7 +49,6 @@ alias hc="history -c"
 alias ll="ls -lahG"
 alias mk="mkdir -v"
 alias mv="mv -iv"
-alias r="ranger"
 alias rm="rm -iv"
 alias t="touch"
 alias v="vim"
@@ -90,6 +89,16 @@ alias rbp="source ~/.bash_profile"
 alias rtc="tmux source ~/.tmux.conf"
 alias vrc="vim ~/.vimrc"
 alias vtc="vim ~/.tmux.conf"
+function udf() {
+    cp ~/.bash_profile ~/Development/dotfiles
+    cp ~/.tmux.conf ~/Development/dotfiles
+    cp ~/.vimrc ~/Development/dotfiles
+    cp ~/.vim/coc-settings.json ~/Development/dotfiles
+    find ~/Development/dotfiles -type f -exec sed -i '' 's/user/user/g' {} \;
+    git -C ~/Development/dotfiles add -A
+    git -C ~/Development/dotfiles commit -m 'update'
+    git -C ~/Development/dotfiles push origin main
+}
 
 # navigation
 alias desk="cd ~/Desktop"
