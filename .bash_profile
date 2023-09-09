@@ -90,7 +90,7 @@ alias rtc="tmux source ~/.tmux.conf"
 alias vrc="vim ~/.vimrc"
 alias vtc="vim ~/.tmux.conf"
 function udf() {
-    cp ~/.bash_profile ~/Development/dotfiles
+    cp -f ~/.bash_profile ~/Development/dotfiles
     cp ~/.tmux.conf ~/Development/dotfiles
     cp ~/.vimrc ~/Development/dotfiles
     cp ~/.vim/coc-settings.json ~/Development/dotfiles
