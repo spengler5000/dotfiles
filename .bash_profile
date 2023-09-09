@@ -1,7 +1,6 @@
 # .bash_profile
 # updated September 9, 2023
 
-
 # paths
 export PATH=$PATH:$GOPATH/bin
 export PATH="$PYENV_ROOT/bin:$PATH"
