@@ -94,7 +94,7 @@ function udf() {
     cp -nf ~/.tmux.conf ~/Development/dotfiles
     cp -nf ~/.vimrc ~/Development/dotfiles
     cp -nf ~/.vim/coc-settings.json ~/Development/dotfiles
-    find ~/Development/dotfiles -type f -exec sed -i "" "s/user/user/g" {} \;
+    LC_ALL=C find ~/Development/dotfiles -type f -exec sed -i "" "s/user/user/g" {} \;
     git -C ~/Development/dotfiles add -A
     git -C ~/Development/dotfiles commit -m 'update'
     git -C ~/Development/dotfiles push origin main
