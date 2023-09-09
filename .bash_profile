@@ -90,10 +90,10 @@ alias rtc="tmux source ~/.tmux.conf"
 alias vrc="vim ~/.vimrc"
 alias vtc="vim ~/.tmux.conf"
 function udf() {
-    cp -f ~/.bash_profile ~/Development/dotfiles
-    cp ~/.tmux.conf ~/Development/dotfiles
-    cp ~/.vimrc ~/Development/dotfiles
-    cp ~/.vim/coc-settings.json ~/Development/dotfiles
+    cp -nf ~/.bash_profile ~/Development/dotfiles
+    cp -nf ~/.tmux.conf ~/Development/dotfiles
+    cp -nf ~/.vimrc ~/Development/dotfiles
+    cp -nf ~/.vim/coc-settings.json ~/Development/dotfiles
     find ~/Development/dotfiles -type f -exec sed -i "" "s/user/user/g" {} \;
     git -C ~/Development/dotfiles add -A
     git -C ~/Development/dotfiles commit -m 'update'
