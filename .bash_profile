@@ -1,5 +1,5 @@
 # .bash_profile
-# updated September 9, 2023
+# updated September 13, 2023
 
 # paths
 export PATH=$PATH:$GOPATH/bin
@@ -47,6 +47,7 @@ alias cp="cp -iv"
 alias f="open -a Finder ./"
 alias hc="history -c"
 alias ll="ls -lahG"
+alias lg="lazygit"
 alias mk="mkdir -v"
 alias mv="mv -iv"
 alias rm="rm -iv"
