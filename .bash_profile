@@ -1,5 +1,5 @@
 # .bash_profile
-# updated September 13, 2023
+# updated September 26, 2023
 
 # paths
 export PATH=$PATH:$GOPATH/bin
@@ -129,6 +129,7 @@ alias gpo="git push origin"
 alias gpod="git push origin development"
 alias gpom="git push origin main"
 alias gpos="git push origin staging"
+alias grset="git reset --hard && git clean --force"
 alias gs="git status -s"
 alias gss="git status"
 alias get="git"
